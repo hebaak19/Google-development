@@ -12,8 +12,8 @@ while True:
     except ValueError:
         print("please enter a valid number ")
 def calculate_bill(bill,rate):
-    bill_rate=(rate/100)*bill
-    total_bill=bill_rate+bill
+    bill_rate=round((rate/100)*bill,2)
+    total_bill=round((bill_rate+bill),2)
     print(f'{bill_rate} Tip ')
     return total_bill
     
